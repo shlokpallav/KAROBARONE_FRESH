@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class SocialLinkCreate(BaseModel):
-    pan_number: UUID
+    store_id: UUID
     platform_id: UUID
     profile_url: str
     is_active: bool = True
@@ -11,7 +11,7 @@ class SocialLinkCreate(BaseModel):
 
 class SocialLinkResponse(BaseModel):
     id: UUID
-    pan_number: UUID
+    store_id: UUID
     platform_id: UUID
     profile_url: str
     is_active: bool
