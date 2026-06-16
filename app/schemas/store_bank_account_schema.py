@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 
 class StoreBankAccountCreate(BaseModel):
-    pan_number: UUID
+    store_id: UUID
 
     account_holder_name: str
 
@@ -24,7 +24,7 @@ class StoreBankAccountCreate(BaseModel):
 
 class StoreBankAccountResponse(BaseModel):
     id: UUID
-    pan_number: UUID
+    store_id: UUID
 
     class Config:
         from_attributes = True

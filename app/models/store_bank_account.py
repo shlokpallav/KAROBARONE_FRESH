@@ -11,7 +11,7 @@ class StoreBankAccount(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
 
-    pan_number = Column(UUID(as_uuid=True), nullable=False)
+    store_id = Column(UUID(as_uuid=True), nullable=False)
 
     account_holder_name = Column(String(255))
 
