@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 
 class SectionCreate(BaseModel):
-    pan_number: UUID
+    store_id: UUID
     plan_id: Optional[UUID] = None
     section_name: str
 
