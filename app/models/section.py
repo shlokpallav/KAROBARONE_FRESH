@@ -12,7 +12,7 @@ class Section(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
 
-    store_id = Column(UUID(as_uuid=True), nullable=False)    pan_number = Column(UUID(as_uuid=True), nullable=False)
+    store_id = Column(UUID(as_uuid=True), nullable=False)
 
     plan_id = Column(UUID(as_uuid=True))
 
